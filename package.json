@@ -1,0 +1,19 @@
+{
+  "name": "maisi_api_doc",
+  "version": "1.0.0",
+  "description": "",
+  "type": "module",
+  "scripts": {
+    "dev": "vitepress dev src",
+    "build": "vitepress build src",
+    "preview": "vitepress preview src"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "cheerio": "^1.2.0",
+    "turndown": "^7.2.4",
+    "vitepress": "^1.6.4"
+  }
+}

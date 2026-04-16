@@ -1,0 +1,12 @@
+import{_ as s,o as n,c as e,ag as t}from"./chunks/framework.DXGyWiRo.js";const h=JSON.parse('{"title":"OCR","description":"","frontmatter":{},"headers":[],"relativePath":"docs/use/api/ocr.md","filePath":"docs/use/api/ocr.md","lastUpdated":null}'),o={name:"docs/use/api/ocr.md"};function p(l,a,r,i,c,d){return n(),e("div",null,[...a[0]||(a[0]=[t(`<h1 id="ocr" tabindex="-1">OCR <a class="header-anchor" href="#ocr" aria-label="Permalink to &quot;OCR&quot;">​</a></h1><p>目前接入的是 <code>mistral</code> 的 OCR 模型。</p><ul><li>API 参考（官方）：<a href="https://docs.mistral.ai/api/#tag/ocr/operation/ocr_v1_ocr_post" target="_blank" rel="noreferrer">https://docs.mistral.ai/api/#tag/ocr/operation/ocr_v1_ocr_post</a></li></ul><h2 id="调用方式" tabindex="-1">调用方式 <a class="header-anchor" href="#调用方式" aria-label="Permalink to &quot;调用方式&quot;">​</a></h2><ul><li>Base URL：<code>https://api.maisi-ai.com</code></li><li>鉴权：<code>Authorization: Bearer &lt;your-api-key&gt;</code></li><li>Endpoint：<code>POST /ocr/v1/ocr</code></li></ul><h2 id="curl-示例" tabindex="-1">curl 示例 <a class="header-anchor" href="#curl-示例" aria-label="Permalink to &quot;curl 示例&quot;">​</a></h2><p>bash</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>curl --request POST \\</span></span>
+<span class="line"><span>  --url https://api.maisi-ai.com/ocr/v1/ocr \\</span></span>
+<span class="line"><span>  --header &#39;Authorization: Bearer &lt;your-api-key&gt;&#39; \\</span></span>
+<span class="line"><span>  --header &#39;Content-Type: application/json&#39; \\</span></span>
+<span class="line"><span>  --data &#39;{</span></span>
+<span class="line"><span>    &quot;model&quot;: &quot;mistral-ocr-latest&quot;,</span></span>
+<span class="line"><span>    &quot;document&quot;: {</span></span>
+<span class="line"><span>      &quot;type&quot;: &quot;document_url&quot;,</span></span>
+<span class="line"><span>      &quot;document_url&quot;: &quot;https://assets.anthropic.com/m/1cd9d098ac3e6467/original/Claude-3-Model-Card-October-Addendum.pdf&quot;</span></span>
+<span class="line"><span>    },</span></span>
+<span class="line"><span>    &quot;include_image_base64&quot;: true</span></span>
+<span class="line"><span>  }&#39;</span></span></code></pre></div>`,8)])])}const _=s(o,[["render",p]]);export{h as __pageData,_ as default};

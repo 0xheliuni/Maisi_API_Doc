@@ -1,0 +1,7 @@
+services:
+  docs:
+    image: ghcr.io/${GITHUB_REPO:-your-org/maisi-api-doc}:${IMAGE_TAG:-latest}
+    container_name: maisi-docs
+    restart: unless-stopped
+    ports:
+      - "${DOCS_PORT:-3000}:80"

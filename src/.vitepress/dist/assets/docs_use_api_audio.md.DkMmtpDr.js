@@ -1,0 +1,15 @@
+import{_ as s,o as n,c as e,ag as p}from"./chunks/framework.DXGyWiRo.js";const h=JSON.parse('{"title":"Audio","description":"","frontmatter":{},"headers":[],"relativePath":"docs/use/api/audio.md","filePath":"docs/use/api/audio.md","lastUpdated":null}'),i={name:"docs/use/api/audio.md"};function t(o,a,l,c,r,d){return n(),e("div",null,[...a[0]||(a[0]=[p(`<h1 id="audio" tabindex="-1">Audio <a class="header-anchor" href="#audio" aria-label="Permalink to &quot;Audio&quot;">​</a></h1><p>Maisi 支持通过 OpenAI 兼容的 Audio 接口进行音频相关调用。</p><ul><li>Base URL：<code>https://api.maisi-ai.com/v1</code></li><li>鉴权：<code>Authorization: Bearer &lt;your-api-key&gt;</code></li></ul><p>完整参数（以 API 开发文档为准）：<a href="https://api-docs.maisi-ai.com/" target="_blank" rel="noreferrer">https://api-docs.maisi-ai.com/</a></p><h2 id="语音转文字-transcriptions" tabindex="-1">语音转文字（Transcriptions） <a class="header-anchor" href="#语音转文字-transcriptions" aria-label="Permalink to &quot;语音转文字（Transcriptions）&quot;">​</a></h2><ul><li>Endpoint：<code>POST /v1/audio/transcriptions</code></li></ul><p>bash</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>curl --request POST \\</span></span>
+<span class="line"><span>  --url https://api.maisi-ai.com/v1/audio/transcriptions \\</span></span>
+<span class="line"><span>  --header &#39;Authorization: Bearer &lt;your-api-key&gt;&#39; \\</span></span>
+<span class="line"><span>  --header &#39;Content-Type: multipart/form-data&#39; \\</span></span>
+<span class="line"><span>  --form file=@/path/to/audio.mp3 \\</span></span>
+<span class="line"><span>  --form model=whisper-1</span></span></code></pre></div><h2 id="文字转语音-speech-tts" tabindex="-1">文字转语音（Speech / TTS） <a class="header-anchor" href="#文字转语音-speech-tts" aria-label="Permalink to &quot;文字转语音（Speech / TTS）&quot;">​</a></h2><ul><li>Endpoint：<code>POST /v1/audio/speech</code></li></ul><p>bash</p><div class="language- vp-adaptive-theme"><button title="Copy Code" class="copy"></button><span class="lang"></span><pre class="shiki shiki-themes github-light github-dark vp-code" tabindex="0"><code><span class="line"><span>curl --request POST \\</span></span>
+<span class="line"><span>  --url https://api.maisi-ai.com/v1/audio/speech \\</span></span>
+<span class="line"><span>  --header &#39;Content-Type: application/json&#39; \\</span></span>
+<span class="line"><span>  --header &#39;Authorization: Bearer &lt;your-api-key&gt;&#39; \\</span></span>
+<span class="line"><span>  --data &#39;{</span></span>
+<span class="line"><span>    &quot;model&quot;: &quot;tts-1&quot;,</span></span>
+<span class="line"><span>    &quot;input&quot;: &quot;你说点什么，包括中文！&quot;,</span></span>
+<span class="line"><span>    &quot;voice&quot;: &quot;alloy&quot;</span></span>
+<span class="line"><span>  }&#39; \\</span></span>
+<span class="line"><span>  --output speech.mp3</span></span></code></pre></div>`,12)])])}const m=s(i,[["render",t]]);export{h as __pageData,m as default};
