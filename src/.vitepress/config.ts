@@ -21,7 +21,7 @@ export default defineConfig({
       { text: '集成教程', link: '/integration/' },
       {
         text: 'API 文档',
-        link: 'https://api-docs.maisi-ai.com/',
+        link: 'https://docs-api.apifox.cn',
         target: '_blank',
       },
       { text: '官网', link: 'https://maisi-ai.com/', target: '_blank' },

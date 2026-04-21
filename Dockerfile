@@ -1,7 +1,9 @@
 FROM node:20-alpine AS build
+RUN apk add --no-cache git
 WORKDIR /app
 COPY package.json package-lock.json ./
 RUN npm ci
+COPY .git ./.git
 COPY src ./src
 RUN npm run build
 
