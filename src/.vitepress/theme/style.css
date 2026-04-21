@@ -45,6 +45,55 @@
 }
 
 /**
+ * Sidebar icons
+ * -------------------------------------------------------------------------- */
+
+.sidebar-icon {
+  display: inline-flex;
+  margin-right: 6px;
+  font-size: 1.1em;
+  vertical-align: -0.15em;
+  flex-shrink: 0;
+}
+
+/**
+ * Navbar logo — larger size + theme-aware color
+ * -------------------------------------------------------------------------- */
+
+.VPNavBarTitle .logo {
+  width: 48px;
+  height: 48px;
+}
+
+.dark .VPNavBarTitle .logo,
+.dark .VPSidebar .logo {
+  filter: invert(1);
+}
+
+/**
+ * Hero — logo before name
+ * -------------------------------------------------------------------------- */
+
+.VPHero .name {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.VPHero .name::after {
+  content: '';
+  display: inline-block;
+  width: 64px;
+  height: 64px;
+  background: url('/logo.png') no-repeat center / contain;
+  flex-shrink: 0;
+}
+
+.dark .VPHero .name::after {
+  filter: invert(1);
+}
+
+/**
  * Hero — gradient name color
  * -------------------------------------------------------------------------- */
 

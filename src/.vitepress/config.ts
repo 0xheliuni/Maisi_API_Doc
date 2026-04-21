@@ -7,11 +7,13 @@ export default defineConfig({
   cleanUrls: false,
 
   head: [
-    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/logo.svg' }],
+    ['link', { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon-64.png' }],
+    ['link', { rel: 'apple-touch-icon', sizes: '180x180', href: '/apple-touch-icon.png' }],
+    ['script', { src: 'https://cdn.jsdelivr.net/npm/iconify-icon@2.3.0/dist/iconify-icon.min.js' }],
   ],
 
   themeConfig: {
-    logo: '/logo.svg',
+    logo: '/logo.png',
     siteTitle: 'Maisi',
 
     nav: [
