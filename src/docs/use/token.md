@@ -4,7 +4,7 @@
 
 ## 令牌创建 
 
-1.  点击[令牌页面](https://api.maisi-ai.com/dashboard/key)，进入令牌页面, 并点击创建按钮。 ![令牌页面](/image/token1.webp)
+1.  点击[令牌页面](https://maisi-ai.com/dashboard/key)，进入令牌页面, 并点击创建按钮。 ![令牌页面](/image/token1.webp)
 2.  生成令牌后，点击列表中的复制按钮，即可获取生成的令牌。 ![令牌页面](/image/token2.webp)
 
 ## 令牌使用 
@@ -27,6 +27,6 @@
 
 不同的客户端需要填写不同的`BASE_URL`，请尝试如下地址：
 
--   `https://api.maisi-ai.com`
--   `https://api.maisi-ai.com/v1`
--   `https://api.maisi-ai.com/v1/chat/completions`
+-   `https://maisi-ai.com`
+-   `https://maisi-ai.com/v1`
+-   `https://maisi-ai.com/v1/chat/completions`

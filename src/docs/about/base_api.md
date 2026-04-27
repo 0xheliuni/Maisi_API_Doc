@@ -4,8 +4,8 @@
 
 ## 默认接口 
 
--   全球节点： [https://api.maisi-ai.com](https://api.maisi-ai.com)
+-   主站节点： [https://maisi-ai.com](https://maisi-ai.com)
 
 ## 其他接口 
 
--   大陆优化： [https://hk.maisi-ai.com](https://hk.maisi-ai.com)
+-   大陆优化： [https://api.maisi-ai.com](https://api.maisi-ai.com)

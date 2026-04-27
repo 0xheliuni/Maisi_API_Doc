@@ -112,8 +112,8 @@ function brandReplace(text) {
     .replace(/uniapi\.ai/g, 'maisi-ai.com')
     .replace(/uniapi\.io/g, 'maisi-ai.com')
     .replace(/uniapi/gi, 'maisi')
-    .replace(/api\.maisi-ai\.com/g, 'api.maisi-ai.com')
-    .replace(/hk\.maisi-ai\.com/g, 'hk.maisi-ai.com')
+    .replace(/api\.maisi-ai\.com/g, 'maisi-ai.com')
+    .replace(/hk\.maisi-ai\.com/g, 'api.maisi-ai.com')
     .replace(/docs\.maisi-ai\.com/g, 'docs.maisi-ai.com');
 }
 

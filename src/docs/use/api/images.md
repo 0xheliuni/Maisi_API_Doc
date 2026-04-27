@@ -2,7 +2,7 @@
 
 Maisi 支持通过 OpenAI 兼容的 Images 接口进行图像相关调用。
 
--   Base URL：`https://api.maisi-ai.com/v1`
+-   Base URL：`https://maisi-ai.com/v1`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 
 ## 生成图像（generations） 
@@ -13,7 +13,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/images/generations \
+  --url https://maisi-ai.com/v1/images/generations \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{

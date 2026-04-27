@@ -1,7 +1,7 @@
 # Responses 
 
 -   Endpoint：`POST /v1/responses`
--   Base URL：`https://api.maisi-ai.com/v1`
+-   Base URL：`https://maisi-ai.com/v1`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 -   API 参考：
     -   Maisi：`/v1/responses`（见 [API 文档](https://api-docs.maisi-ai.com/api-297251423.md)）
@@ -13,7 +13,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/responses \
+  --url https://maisi-ai.com/v1/responses \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -28,7 +28,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/responses \
+  --url https://maisi-ai.com/v1/responses \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -51,7 +51,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/responses \
+  --url https://maisi-ai.com/v1/responses \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -67,7 +67,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/responses \
+  --url https://maisi-ai.com/v1/responses \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{

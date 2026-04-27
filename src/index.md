@@ -3,7 +3,7 @@ layout: home
 hero:
   name: "Maisi"
   text: "AI All In One"
-  tagline: "✨ 企业级API转发服务，AI模型All In One！"
+  tagline: "✨ 企业级API网关服务，打破不可能三角！"
   actions:
     - theme: brand
       text: 官网

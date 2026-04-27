@@ -4,7 +4,7 @@ BFL 属于任务型接口：创建任务 → 查询结果。
 
 ## Base URL / 鉴权 
 
--   Base URL：`https://api.maisi-ai.com/bfl`
+-   Base URL：`https://maisi-ai.com/bfl`
 -   Header：`x-key: <your-api-key>`
 
 > 你原文示例也体现了这一点：client headers 使用 `x-key`。
@@ -94,7 +94,7 @@ class BFLOutput:
 class BFLClient:
     """BFL API Client"""
 
-    def __init__(self, api_key: str, base_url: str = "https://api.maisi-ai.com/bfl"):
+    def __init__(self, api_key: str, base_url: str = "https://maisi-ai.com/bfl"):
         self.api_key = api_key
         self.base_url = base_url.rstrip('/')
         self.session = requests.Session()
@@ -190,7 +190,7 @@ class BFLClient:
 if __name__ == "__main__":
     client = BFLClient(
         api_key="sk-xxxxxx",
-        base_url="https://api.maisi-ai.com/bfl" 
+        base_url="https://maisi-ai.com/bfl" 
     )
 
     input_data = {

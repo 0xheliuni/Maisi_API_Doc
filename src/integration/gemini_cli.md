@@ -22,7 +22,7 @@ vim ~/.env
 env
 
 ```
-GOOGLE_GEMINI_BASE_URL=https://api.maisi-ai.com/gemini
+GOOGLE_GEMINI_BASE_URL=https://maisi-ai.com/gemini
 # 填写你的API密钥
 GEMINI_API_KEY=sk-xxxx
 # 设置默认模型

@@ -13,6 +13,7 @@
   "license": "ISC",
   "devDependencies": {
     "cheerio": "^1.2.0",
+    "markdown-it-mathjax3": "^4.3.2",
     "turndown": "^7.2.4",
     "vitepress": "^1.6.4"
   }

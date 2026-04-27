@@ -28,7 +28,7 @@ from google import genai
 from google.genai import types
 
 client = genai.Client(
-    http_options=types.HttpOptions(base_url='https://api.maisi-ai.com/gemini'),
+    http_options=types.HttpOptions(base_url='https://maisi-ai.com/gemini'),
     api_key="YOUR_API_KEY")
 
 response = client.models.generate_content(
@@ -63,7 +63,7 @@ import { GoogleGenAI } from "@google/genai";
 const ai = new GoogleGenAI({
   apiKey: "<your-api-key>",
   httpOptions: {
-    baseUrl: "https://api.maisi-ai.com/gemini",
+    baseUrl: "https://maisi-ai.com/gemini",
   },
 });
 

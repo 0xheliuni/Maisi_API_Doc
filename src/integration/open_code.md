@@ -54,12 +54,12 @@ json
     "anthropic": {
       "name": "Anthropic",
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1"
+        "baseURL": "https://maisi-ai.com/v1"
       }
     },
     "openai": {
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1"
+        "baseURL": "https://maisi-ai.com/v1"
       },
       "models": {
         "gpt-5.2": {
@@ -83,7 +83,7 @@ json
       "npm": "@ai-sdk/openai-compatible",
       "name": "Maisi", // 显示名称
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1" // Maisi 的基础 URL
+        "baseURL": "https://maisi-ai.com/v1" // Maisi 的基础 URL
       },
       "models": {
         "deepseek-v3.2": {  // 这里的 "deepseek-v3.2" 是模型 ID，可以根据需要更改(可查看我们的[模型列表](https://maisi-ai.com/dashboard/model_list))
@@ -101,7 +101,7 @@ json
 
 ## 添加认证信息 
 
-1.  在 Maisi 平台[令牌管理](https://api.maisi-ai.com/dashboard/key)中生成的 API Key。
+1.  在 Maisi 平台[令牌管理](https://maisi-ai.com/dashboard/key)中生成的 API Key。
 2.  终端中执行`opencode auth login`,先选择`OpenAI`，选择`Manually enter API Key`，然后输入你的 API Key。
 3.  再在终端中执行`opencode auth login`添加`Anthropic`的认证信息，选择`Manually enter API Key`，然后输入你的 API Key。
 4.  最后我们添加`maisi`的认证信息，执行`opencode auth login`，然后选择最下面的`Other`，系统会提示你输入 Provider ID，请输入`maisi`,然后输入你的 API Key。
@@ -208,12 +208,12 @@ json
     "anthropic": {
       "name": "Anthropic",
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1"
+        "baseURL": "https://maisi-ai.com/v1"
       }
     },
     "openai": {
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1"
+        "baseURL": "https://maisi-ai.com/v1"
       },
       "models": {
         "gpt-5.2": {
@@ -237,7 +237,7 @@ json
       "npm": "@ai-sdk/openai-compatible",
       "name": "Maisi",
       "options": {
-        "baseURL": "https://api.maisi-ai.com/v1"
+        "baseURL": "https://maisi-ai.com/v1"
       },
       "models": {
         "deepseek-v3.2": {

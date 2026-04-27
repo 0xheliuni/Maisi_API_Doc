@@ -64,12 +64,12 @@ hero:
 
 ```bash
 # 如需更换 API 域名，在 src 目录下执行：
-find src -name "*.md" -exec sed -i 's|api.maisi-ai.com|your-new-api.com|g' {} \;
+find src -name "*.md" -exec sed -i 's|maisi-ai.com|your-new-api.com|g' {} \;
 ```
 
 当前使用的 API 地址：
-- 全球节点：`https://api.maisi-ai.com`
-- 大陆优化：`https://hk.maisi-ai.com`
+- 主站节点：`https://maisi-ai.com`
+- 大陆优化：`https://api.maisi-ai.com`
 
 ### Logo 配置
 

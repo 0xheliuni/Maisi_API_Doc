@@ -4,7 +4,7 @@ Maisi 支持 midjourney-proxy-plus 接口协议。
 
 ## Base URL / 鉴权 
 
--   Base URL：`https://api.maisi-ai.com/mj`
+-   Base URL：`https://maisi-ai.com/mj`
 -   鉴权：`mj-api-secret: <your-api-key>`
 
 ## 路径与模式 
@@ -37,7 +37,7 @@ import json
 # Fast模式请求路径：/mj-fast
 # Turbo模式请求路径：/mj-turbo
 # 如果不填写，默认是Fast模式
-BASE_URL = "https://api.maisi-ai.com/mj-relax"
+BASE_URL = "https://maisi-ai.com/mj-relax"
 BEARER_TOKEN = "your_token_here"
 HEADERS = {
     "mj-api-secret": f"{BEARER_TOKEN}",

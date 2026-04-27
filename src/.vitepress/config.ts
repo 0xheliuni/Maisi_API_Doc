@@ -1,10 +1,35 @@
 import { defineConfig } from 'vitepress'
+import mathjax3 from 'markdown-it-mathjax3'
+
+const customElements = [
+  'mjx-container', 'mjx-assistive-mml', 'math', 'maction', 'maligngroup',
+  'malignmark', 'menclose', 'merror', 'mfenced', 'mfrac', 'mi', 'mlongdiv',
+  'mmultiscripts', 'mn', 'mo', 'mover', 'mpadded', 'mphantom', 'mroot',
+  'mrow', 'ms', 'mscarries', 'mscarry', 'msgroup', 'mstack', 'msline',
+  'mspace', 'msqrt', 'msrow', 'mstyle', 'msub', 'msup', 'msubsup',
+  'mtable', 'mtd', 'mtext', 'mtr', 'munder', 'munderover', 'semantics',
+  'annotation', 'annotation-xml',
+]
 
 export default defineConfig({
   title: 'Maisi',
   description: 'Maisi API 文档',
   lang: 'zh-CN',
   cleanUrls: false,
+
+  markdown: {
+    config: (md) => {
+      md.use(mathjax3)
+    },
+  },
+
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: (tag) => customElements.includes(tag),
+      },
+    },
+  },
 
   head: [
     ['link', { rel: 'icon', type: 'image/png', sizes: '64x64', href: '/favicon-64.png' }],
@@ -14,7 +39,7 @@ export default defineConfig({
 
   themeConfig: {
     logo: '/logo.png',
-    siteTitle: 'Maisi',
+    siteTitle: 'Maisi-AI',
 
     nav: [
       { text: '使用文档', link: '/docs/about/introduction' },
@@ -30,7 +55,7 @@ export default defineConfig({
     sidebar: {
       '/docs/': [
         {
-          text: '关于',
+          text: '关于迈斯',
           items: [
             { text: '简介', link: '/docs/about/introduction' },
             { text: 'API 地址', link: '/docs/about/base_api' },
@@ -39,31 +64,29 @@ export default defineConfig({
           ],
         },
         {
-          text: '使用',
+          text: '使用文档',
           items: [
             { text: '快速开始', link: '/docs/use/quickstart' },
             { text: '令牌说明', link: '/docs/use/token' },
             { text: 'API 调用', link: '/docs/use/api' },
-            { text: 'OpenAI 兼容接口', link: '/docs/use/api/openai_compatible' },
-            { text: 'Chat Completions', link: '/docs/use/api/chat_completions' },
-            { text: 'Responses', link: '/docs/use/api/responses' },
-            { text: 'Images', link: '/docs/use/api/images' },
-            { text: 'Audio', link: '/docs/use/api/audio' },
-            { text: 'Claude 原生接口', link: '/docs/use/api/claude' },
-            { text: 'Gemini 原生接口', link: '/docs/use/api/gemini' },
-            { text: 'OCR', link: '/docs/use/api/ocr' },
-            { text: 'Midjourney', link: '/docs/use/api/midjourney' },
-            { text: 'Suno', link: '/docs/use/api/suno' },
-            { text: 'FalAI', link: '/docs/use/api/falai' },
-            { text: '可灵 (Kling)', link: '/docs/use/api/kling' },
-            { text: 'Replicate', link: '/docs/use/api/replicate' },
-            { text: 'BFL', link: '/docs/use/api/bfl' },
             { text: 'OpenAI SDK', link: '/docs/use/openai_sdk' },
             { text: 'Claude SDK', link: '/docs/use/claude_sdk' },
             { text: 'Gemini SDK', link: '/docs/use/gemini_sdk' },
             { text: '特殊用法', link: '/docs/use/special_usage' },
             { text: '推理模型', link: '/docs/use/reasoning' },
             { text: '对话补全', link: '/docs/use/chat' },
+          ],
+        },
+        {
+          text: 'API 调用示例',
+          items: [
+            { text: 'OpenAI 兼容接口', link: '/docs/use/api/openai_compatible' },
+            { text: 'Chat Completions', link: '/docs/use/api/chat_completions' },
+            { text: 'Responses', link: '/docs/use/api/responses' },
+            { text: 'Images', link: '/docs/use/api/images' },
+            { text: 'Audio', link: '/docs/use/api/audio' },
+            { text: 'Claude 原生接口', link: '/docs/use/api/claude' },
+            { text: 'Gemini 原生接口', link: '/docs/use/api/gemini' }
           ],
         },
         {

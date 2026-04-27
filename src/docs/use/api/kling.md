@@ -2,7 +2,7 @@
 
 ## Base URL / 鉴权 
 
--   Base URL：`https://api.maisi-ai.com/kling`
+-   Base URL：`https://maisi-ai.com/kling`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 
 python
@@ -57,7 +57,7 @@ class TaskStatus(str, Enum):
 class KlingImageSDK:
     """Kling 图像生成 API SDK"""
 
-    def __init__(self, api_key: str, base_url: str = "https://api.maisi-ai.com/kling"):
+    def __init__(self, api_key: str, base_url: str = "https://maisi-ai.com/kling"):
         """
         初始化 SDK
 

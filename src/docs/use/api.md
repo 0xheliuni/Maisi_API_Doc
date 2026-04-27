@@ -9,8 +9,8 @@ Maisi 提供多种大模型/多模态模型的统一调用入口。
 
 所有地址数据互通，可按网络情况切换：
 
--   全球节点：`https://api.maisi-ai.com`
--   大陆优化：`https://hk.maisi-ai.com`
+-   主站节点：`https://maisi-ai.com`
+-   大陆优化：`https://api.maisi-ai.com`
 
 ## 2\. 鉴权方式（Authorization） 
 

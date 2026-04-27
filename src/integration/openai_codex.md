@@ -39,7 +39,7 @@ model_provider = "openai-chat-completions"
 name = "Maisi"
 
 # API的基本URL。Codex将使用此URL来发送POST请求。
-base_url = "https://api.maisi-ai.com/v1"
+base_url = "https://maisi-ai.com/v1"
 # 如果设置了 `env_key`，则标识在使用 Codex 与此提供者时必须设置的环境变量。环境变量的值必须非空，并将用于 POST 请求的 `Bearer TOKEN` HTTP 头中。
 env_key = "Maisi_API_KEY"
 # wire_api 的有效值为 "chat" 和 "responses"。如果省略，默认为 "chat"。

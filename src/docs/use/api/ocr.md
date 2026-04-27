@@ -6,7 +6,7 @@
 
 ## 调用方式 
 
--   Base URL：`https://api.maisi-ai.com`
+-   Base URL：`https://maisi-ai.com`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 -   Endpoint：`POST /ocr/v1/ocr`
 
@@ -16,7 +16,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/ocr/v1/ocr \
+  --url https://maisi-ai.com/ocr/v1/ocr \
   --header 'Authorization: Bearer <your-api-key>' \
   --header 'Content-Type: application/json' \
   --data '{

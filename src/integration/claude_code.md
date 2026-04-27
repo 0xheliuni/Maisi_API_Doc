@@ -31,7 +31,7 @@ json
 ```
 {
   "env": {
-    "ANTHROPIC_BASE_URL": "https://api.maisi-ai.com",
+    "ANTHROPIC_BASE_URL": "https://maisi-ai.com",
     "ANTHROPIC_AUTH_TOKEN": "sk-xxxx",
     "CLAUDE_CODE_DISABLE_EXPERIMENTAL_BETAS": "1",
     "CLAUDE_CODE_ATTRIBUTION_HEADER": "0"

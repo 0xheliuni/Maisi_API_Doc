@@ -4,7 +4,7 @@ Replicate 属于任务型接口：创建 prediction → 轮询查询 → 获取 
 
 ## Base URL / 鉴权 
 
--   Base URL：`https://api.maisi-ai.com/replicate`
+-   Base URL：`https://maisi-ai.com/replicate`
 -   Header：`Authorization: Bearer <your-api-key>`
 
 ## 主要接口 
@@ -25,7 +25,7 @@ python
 ```
 from replicate.client import Client
 
-client = Client(api_token="sk-xxxxx", base_url="https://api.maisi-ai.com/replicate")
+client = Client(api_token="sk-xxxxx", base_url="https://maisi-ai.com/replicate")
 
 input = {
     "prompt": "The photo: Create a cinematic, photorealistic medium shot capturing the dynamic energy of a high-octane action film. The focus is a young woman with wind-swept dark hair streaked with pink highlights and determined features, looking directly and intently into the camera lens, she is slightly off-center. She wears a fitted pink and gold racing jacket over a black tank top with \"Imagen 4 Fast\" in motion-stylized lettering and on the next line \"on Replicate\" emblazoned across the chest and aviator sunglasses pushed up on her head. The lighting is dramatic with motion blur streaks and neon reflections from passing city lights, creating dynamic lens flares and light trails (they do not cover her face). The background shows a blurred urban nightscape with streaking car headlights and illuminated skyscrapers rushing past, rendered with heavy motion blur and shallow depth of field. High contrast lighting, vibrant neon color palette with deep blues and electric yellows, and razor-sharp focus on her intense eyes enhance the fast-paced, electrifying atmosphere. She is illuminated while the background is darker.",
@@ -150,7 +150,7 @@ class ReplicateOutput:
 class ReplicateClient:
     """自定义 Replicate API 客户端"""
 
-    def __init__(self, api_token: str, base_url: str = "https://api.maisi-ai.com/replicate"):
+    def __init__(self, api_token: str, base_url: str = "https://maisi-ai.com/replicate"):
         self.api_token = api_token
         self.base_url = base_url.rstrip('/')
         self.session = requests.Session()
@@ -239,7 +239,7 @@ class ReplicateClient:
 if __name__ == "__main__":
     client = ReplicateClient(
         api_token="sk-xxxxx",
-        base_url="https://api.maisi-ai.com/replicate"
+        base_url="https://maisi-ai.com/replicate"
     )
 
     input = {

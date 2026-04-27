@@ -1,7 +1,7 @@
 # Chat Completions 
 
 -   Endpoint：`POST /v1/chat/completions`
--   Base URL：`https://api.maisi-ai.com/v1`
+-   Base URL：`https://maisi-ai.com/v1`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 -   API 参考：
     -   Maisi：`/v1/chat/completions`（见 [API 文档](https://api-docs.maisi-ai.com/api-297251415.md)）
@@ -13,7 +13,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/chat/completions \
+  --url https://maisi-ai.com/v1/chat/completions \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -30,7 +30,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/chat/completions \
+  --url https://maisi-ai.com/v1/chat/completions \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -56,7 +56,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/chat/completions \
+  --url https://maisi-ai.com/v1/chat/completions \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{
@@ -76,7 +76,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/v1/chat/completions \
+  --url https://maisi-ai.com/v1/chat/completions \
   --header 'Content-Type: application/json' \
   --header 'Authorization: Bearer <your-api-key>' \
   --data '{

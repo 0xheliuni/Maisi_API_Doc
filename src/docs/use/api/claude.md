@@ -4,7 +4,7 @@ Maisi 支持 Claude 的原生接口形态（Anthropic Messages API 风格）。
 
 ## Base URL / 鉴权 
 
--   Base URL：`https://api.maisi-ai.com/claude`
+-   Base URL：`https://maisi-ai.com/claude`
 -   Header：`x-api-key: <your-api-key>`
 -   Endpoint：`POST /claude/v1/messages`
 
@@ -14,7 +14,7 @@ bash
 
 ```
 curl --request POST \
-  --url https://api.maisi-ai.com/claude/v1/messages \
+  --url https://maisi-ai.com/claude/v1/messages \
   --header 'Content-Type: application/json' \
   --header 'x-api-key: <your-api-key>' \
   --data '{
@@ -41,7 +41,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     api_key="<your-api-key>",
-    base_url="https://api.maisi-ai.com/claude",
+    base_url="https://maisi-ai.com/claude",
 )
 
 message = client.messages.create(

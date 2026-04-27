@@ -2,7 +2,7 @@
 
 Suno 属于任务型接口：通常需要提交任务，然后轮询查询状态，成功后获取结果。
 
--   Base URL：`https://api.maisi-ai.com/suno`
+-   Base URL：`https://maisi-ai.com/suno`
 -   鉴权：`Authorization: Bearer <your-api-key>`
 -   详细参数与接口：以 [API 开发文档](https://api-docs.maisi-ai.com/) 中 Suno 相关条目为准
 
@@ -23,7 +23,7 @@ import time
 from typing import Dict, Any
 
 key = "sk-xxxxx"  # 替换为你的key
-BASE_URL = "https://api.maisi-ai.com/suno"
+BASE_URL = "https://maisi-ai.com/suno"
 
 def get_headers() -> Dict[str, str]:
     return {

@@ -2,13 +2,13 @@
 
 ## 创建令牌 
 
-注册好帐号后，前往 [令牌管理](https://api.maisi-ai.com/dashboard/key) 页面创建一个新的 API 密钥。请妥善保存此密钥，因为它将用于身份验证。 详细步骤，请查看 [令牌说明](/docs/use/token.html)。
+注册好帐号后，前往 [令牌管理](https://maisi-ai.com/console/token) 页面创建一个新的 API 密钥。请妥善保存此密钥，因为它将用于身份验证。 详细步骤，请查看 [令牌说明](/docs/use/token.html)。
 
 获取到令牌后，您需要将下面的代码中的 `<your-api-key>` 替换为您的实际 API 密钥。
 
 ## 选择模型 
 
-我们支持多种模型，您可以在 [模型列表](https://maisi-ai.com/dashboard/model_list) 中查看可用模型。选择适合您需求的模型。
+我们支持多种模型，您可以在 [模型广场](https://maisi-ai.com/pricing) 中查看可用模型。选择适合您需求的模型。
 
 ## OpenAI API 请求 
 
