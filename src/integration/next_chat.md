@@ -8,7 +8,7 @@
 
 ## 简单配置 
 
-`https://{url}/#/?settings={"key":"{key}","url":"https://maisi-ai.com"}`
+`https://{url}/#/?settings={"key":"{key}","url":"https://api.maisi-ai.com"}`
 
 -   `{url}` 是您部署的服务器地址
 -   `{key}` 是您的令牌

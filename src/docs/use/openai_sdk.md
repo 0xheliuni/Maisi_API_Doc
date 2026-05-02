@@ -46,7 +46,7 @@ js
 import OpenAI from "openai";
 const client = new OpenAI({
   apiKey: process.env.OPENAI_API_KEY,
-  baseURL: "https://maisi-ai.com/v1", // 如果使用 Maisi，请确保设置正确的 baseURL
+  baseURL: "https://api.maisi-ai.com/v1", // 如果使用 Maisi，请确保设置正确的 baseURL
 });
 
 const response = await client.responses.create({
@@ -83,7 +83,7 @@ python
 from openai import OpenAI
 import os
 
-base_url = "https://maisi-ai.com/v1"  # 如果使用 Maisi，请确保设置正确的 baseURL
+base_url = "https://api.maisi-ai.com/v1"  # 如果使用 Maisi，请确保设置正确的 baseURL
 api_key = os.getenv("OPENAI_API_KEY") # 从环境变量中获取 API 密钥
 client = OpenAI(base_url=base_url, api_key=api_key)
 
@@ -128,7 +128,7 @@ using OpenAI.Chat;
 ChatClient client = new(
   model: "gpt-4.1",
   apiKey: Environment.GetEnvironmentVariable("OPENAI_API_KEY"),
-  baseUrl: "https://maisi-ai.com/v1" // 如果使用 Maisi，请确保设置正确的 baseURL
+  baseUrl: "https://api.maisi-ai.com/v1" // 如果使用 Maisi，请确保设置正确的 baseURL
 );
 
 ChatCompletion completion = client.CompleteChat("Say 'this is a test.'");
@@ -214,7 +214,7 @@ import (
 func main() {
   client := openai.NewClient(
     option.WithAPIKey("My API Key"), // defaults to os.LookupEnv("OPENAI_API_KEY")
-    option.WithBaseURL("https://maisi-ai.com/v1"), // 如果使用 Maisi，请确保设置正确的 baseURL
+    option.WithBaseURL("https://api.maisi-ai.com/v1"), // 如果使用 Maisi，请确保设置正确的 baseURL
   )
   chatCompletion, err := client.Chat.Completions.New(
     context.TODO(), openai.ChatCompletionNewParams{

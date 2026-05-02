@@ -13,7 +13,7 @@ hero:
       link: /docs/about/introduction
     - theme: alt
       text: API开发文档
-      link: https://api-docs.maisi-ai.com/
+      link: https://docs-api.apifox.cn/
 features:
   - icon: "👋"
     title: "简介"

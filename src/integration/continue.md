@@ -15,7 +15,7 @@ json
       "model": "gpt-4o",
       "provider": "openai",
       "apiKey": "sk-xxxx",
-      "apiBase": "https://maisi-ai.com/v1",
+      "apiBase": "https://api.maisi-ai.com/v1",
       "title": "GPT-4o OpenAI"
     }
   ],
@@ -24,7 +24,7 @@ json
     "provider": "openai",
     "model": "gpt-4o",
     "apiKey": "sk-xxxx",
-    "apiBase": "https://maisi-ai.com/v1"
+    "apiBase": "https://api.maisi-ai.com/v1"
   }
 }
 ```

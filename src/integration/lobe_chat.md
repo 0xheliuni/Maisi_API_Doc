@@ -16,7 +16,7 @@
 应用配置 - 语言模型 - OpenAI:
 
 1.  API KEY 填写您的令牌
-2.  BASE URL 填写 `https://maisi-ai.com/v1`
+2.  BASE URL 填写 `https://api.maisi-ai.com/v1`
 3.  点击`获取模型列表`按钮，获取模型列表
 4.  点击`模型列表`， 添加需要使用的模型
 

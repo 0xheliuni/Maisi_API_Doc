@@ -9,7 +9,7 @@
 bash
 
 ```
-curl -X POST https://maisi-ai.com/v1/chat/completions \
+curl -X POST https://api.maisi-ai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer sk-proj-1234567890" \
   -d '{
@@ -25,7 +25,7 @@ curl -X POST https://maisi-ai.com/v1/chat/completions \
 bash
 
 ```
-curl -X POST https://maisi-ai.com/v1/chat/completions \
+curl -X POST https://api.maisi-ai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer sk-proj-1234567890" \
   -d '{
@@ -50,7 +50,7 @@ curl -X POST https://maisi-ai.com/v1/chat/completions \
 bash
 
 ```
-curl -X POST https://maisi-ai.com/v1/chat/completions \
+curl -X POST https://api.maisi-ai.com/v1/chat/completions \
   -H "Content-Type: application/json" \
   -H "Authorization: Bearer sk-proj-1234567890" \
   -d '{

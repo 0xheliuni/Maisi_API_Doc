@@ -49,7 +49,7 @@ import Anthropic from "@anthropic-ai/sdk";
 
 const anthropic = new Anthropic({
   apiKey: process.env.ANTHROPIC_API_KEY,
-  baseURL: "https://maisi-ai.com/claude",
+  baseURL: "https://api.maisi-ai.com/claude",
 });
 
 const msg = await anthropic.messages.create({
@@ -99,7 +99,7 @@ import anthropic
 
 client = anthropic.Anthropic(
     api_key="your_api_key_here",
-    base_url="https://maisi-ai.com/claude"
+    base_url="https://api.maisi-ai.com/claude"
 )
 
 message = client.messages.create(
@@ -200,7 +200,7 @@ import (
 func main() {
 	client := anthropic.NewClient(
 		option.WithAPIKey("my-anthropic-api-key"), // defaults to os.LookupEnv("ANTHROPIC_API_KEY")
-        option.WithBaseURL("https://maisi-ai.com/claude"), // defaults to os.LookupEnv("ANTHROPIC_BASE_URL")
+        option.WithBaseURL("https://api.maisi-ai.com/claude"), // defaults to os.LookupEnv("ANTHROPIC_BASE_URL")
 	)
 	message, err := client.Messages.New(context.TODO(), anthropic.MessageNewParams{
 		MaxTokens: 1024,
@@ -240,7 +240,7 @@ require "anthropic"
 
 anthropic = Anthropic::Client.new(
   api_key: ENV["ANTHROPIC_API_KEY"], # This is the default and can be omitted
-  base_url: "https://maisi-ai.com/claude" # This is the default and can be omitted
+  base_url: "https://api.maisi-ai.com/claude" # This is the default and can be omitted
 )
 
 message = anthropic.messages.create(
